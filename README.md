@@ -1,3 +1,4 @@
+Taken from https://github.com/tensorpack/tensorpack.git (tensorpack/examples/FasterRCNN/)
 # Faster-RCNN / Mask-RCNN on COCO
 This example provides a minimal (<2k lines) and faithful implementation of the following papers:
 
