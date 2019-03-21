@@ -1,0 +1,951 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="58b87700-0e89-49e2-a449-5669383973cc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/KITTI_for_koby.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NumpyEncoder_json.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coco_for_koby.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/display_image.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/open_images_for_koby.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/callbacks/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/callbacks/base.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/callbacks/concurrency.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/callbacks/graph.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/callbacks/group.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/callbacks/hooks.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/callbacks/inference.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/callbacks/inference_runner.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/callbacks/misc.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/callbacks/monitor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/callbacks/param.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/callbacks/prof.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/callbacks/saver.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/callbacks/stats.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/callbacks/steps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/callbacks/summary.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/callbacks/trigger.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/contrib/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/contrib/keras.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/dataflow/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/dataflow/base.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/dataflow/common.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/dataflow/dataset/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/dataflow/dataset/bsds500.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/dataflow/dataset/cifar.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/dataflow/dataset/ilsvrc.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/dataflow/dataset/mnist.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/dataflow/dataset/svhn.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/dataflow/dftools.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/dataflow/format.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/dataflow/image.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/dataflow/imgaug/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/dataflow/imgaug/_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/dataflow/imgaug/base.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/dataflow/imgaug/convert.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/dataflow/imgaug/crop.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/dataflow/imgaug/deform.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/dataflow/imgaug/geometry.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/dataflow/imgaug/imgproc.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/dataflow/imgaug/meta.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/dataflow/imgaug/misc.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/dataflow/imgaug/noise.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/dataflow/imgaug/paste.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/dataflow/imgaug/transform.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/dataflow/parallel.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/dataflow/parallel_map.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/dataflow/raw.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/dataflow/remote.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/dataflow/serialize.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/graph_builder/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/graph_builder/distributed.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/graph_builder/model_desc.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/graph_builder/predict.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/graph_builder/training.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/graph_builder/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/input_source/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/input_source/input_source.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/input_source/input_source_base.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/libinfo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/models/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/models/_old_batch_norm.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/models/_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/models/batch_norm.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/models/common.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/models/conv2d.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/models/fc.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/models/image_sample.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/models/layer_norm.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/models/linearwrap.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/models/nonlin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/models/pool.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/models/registry.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/models/regularize.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/models/shape_utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/models/shapes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/models/tflayer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/models/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/predict/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/predict/base.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/predict/concurrency.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/predict/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/predict/dataset.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/predict/multigpu.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/tfutils/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/tfutils/argscope.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/tfutils/collection.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/tfutils/common.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/tfutils/dependency.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/tfutils/distributed.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/tfutils/export.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/tfutils/gradproc.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/tfutils/model_utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/tfutils/optimizer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/tfutils/scope_utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/tfutils/sesscreate.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/tfutils/sessinit.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/tfutils/summary.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/tfutils/symbolic_functions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/tfutils/tower.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/tfutils/varmanip.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/tfutils/varreplace.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/train/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/train/base.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/train/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/train/interface.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/train/tower.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/train/trainers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/train/utility.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/utils/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/utils/argtools.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/utils/concurrency.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/utils/debug.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/utils/develop.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/utils/fs.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/utils/globvars.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/utils/gpu.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/utils/loadcaffe.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/utils/logger.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/utils/naming.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/utils/nvml.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/utils/palette.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/utils/rect.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/utils/serialize.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/utils/stats.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/utils/timer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/utils/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorpack/utils/viz.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data.py" beforeDir="false" afterPath="$PROJECT_DIR$/data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eval.py" beforeDir="false" afterPath="$PROJECT_DIR$/eval.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/train.py" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/train.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="553">
+              <caret line="474" column="46" selection-start-line="474" selection-start-column="46" selection-end-line="474" selection-end-column="46" />
+              <folding>
+                <element signature="e#64#73#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/open_images_for_koby.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="182" column="36" lean-forward="true" selection-start-line="182" selection-start-column="36" selection-end-line="182" selection-end-column="36" />
+              <folding>
+                <element signature="e#57#75#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="5890">
+              <caret line="331" column="25" selection-start-line="331" selection-start-column="25" selection-end-line="331" selection-end-column="25" />
+              <folding>
+                <element signature="e#41#51#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/eval.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2679">
+              <caret line="157" column="18" selection-start-line="157" selection-start-column="18" selection-end-line="157" selection-end-column="18" />
+              <folding>
+                <element signature="e#41#52#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/display_image.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="931">
+              <caret line="49" column="23" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
+              <folding>
+                <element signature="e#50#60#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="456">
+              <caret line="28" column="45" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
+              <folding>
+                <element signature="e#43#61#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tensorpack/dataflow/imgaug/transform.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1102">
+              <caret line="63" column="13" selection-start-line="63" selection-start-column="13" selection-end-line="63" selection-end-column="13" />
+              <folding>
+                <element signature="e#46#85#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tensorpack/dataflow/imgaug/base.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1919">
+              <caret line="109" column="6" selection-start-line="109" selection-start-column="6" selection-end-line="109" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="69" column="66" selection-start-line="69" selection-start-column="61" selection-end-line="69" selection-end-column="66" />
+              <folding>
+                <element signature="e#43#61#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/model_frcnn.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2850">
+              <caret line="160" column="24" selection-start-line="160" selection-start-column="4" selection-end-line="160" selection-end-column="24" />
+              <folding>
+                <element signature="e#42#65#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>MaxBytesInUse</find>
+      <find>PeakMemoryTracker</find>
+      <find>input</find>
+      <find>check</find>
+      <find>graph</find>
+      <find>input_names</find>
+      <find>image</find>
+      <find>freeze_graph</find>
+      <find>'image'</find>
+      <find>tower-</find>
+      <find>get_inference_tensor_names</find>
+      <find>TowerTrainer</find>
+      <find>SingleCostTrainer</find>
+      <find>get_tensors_maybe_in_tower</find>
+      <find>get_predictor</find>
+      <find>EvalCallback</find>
+      <find>MultiTowerOfflinePredictor</find>
+      <find>MODEL</find>
+      <find>tower</find>
+      <find>ModelSaver</find>
+      <find>output_node_names</find>
+      <find>filename_tensor_name</find>
+      <find>get_eval_dataflow</find>
+      <find>CLASS_NAMES</find>
+      <find>saver</find>
+      <find>FRCNN_NMS_THRESH</find>
+      <find>RESULT_SCORE_THRESH_VIS</find>
+      <find>RESULT_SCORE_THRESH</find>
+      <find>fastrcnn_predictions</find>
+      <find>class</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/coco.py" />
+        <option value="$PROJECT_DIR$/NumpyEncoder_json.py" />
+        <option value="$PROJECT_DIR$/data.py" />
+        <option value="$PROJECT_DIR$/KITTI_for_koby.py" />
+        <option value="$PROJECT_DIR$/coco_for_koby.py" />
+        <option value="$PROJECT_DIR$/open_images_for_koby.py" />
+        <option value="$PROJECT_DIR$/final_model.py" />
+        <option value="$PROJECT_DIR$/utils/freeze_graph_koby.py" />
+        <option value="$PROJECT_DIR$/freeze_graph_2.py" />
+        <option value="$PROJECT_DIR$/freeze_graph_koby.py" />
+        <option value="$PROJECT_DIR$/tensorpack/callbacks/saver_for_koby.py" />
+        <option value="$PROJECT_DIR$/tensorpack/callbacks/saver.py" />
+        <option value="$PROJECT_DIR$/config.py" />
+        <option value="$PROJECT_DIR$/eval.py" />
+        <option value="$PROJECT_DIR$/train.py" />
+        <option value="$PROJECT_DIR$/display_image.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="292" />
+    <option name="y" value="84" />
+    <option name="width" value="1400" />
+    <option name="height" value="1028" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="FasterRCNN" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FasterRCNN" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../tensorflow_source_code/tensorflow/python/tools/freeze_graph.py" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.train">
+    <configuration name="freeze_graph" type="PythonConfigurationType" factoryName="Python">
+      <module name="FasterRCNN" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../../../venv3/bin/python3.5" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../tensorflow_source_code/tensorflow/python/tools" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../../tensorflow_source_code/tensorflow/python/tools/freeze_graph.py" />
+      <option name="PARAMETERS" value="--input_graph /media/koby_a/Data/train_log/test/original.pbtxt --input_checkpoint /media/koby_a/Data/train_log/test/model-500 --output_node_names &quot;tower-pred-0/final_probs&quot; --output_graph /media/koby_a/Data/train_log/test/frozen.pb" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="freeze_graph_2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="FasterRCNN" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/freeze_graph_2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="freeze_graph_koby" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="FasterRCNN" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/freeze_graph_koby.py" />
+      <option name="PARAMETERS" value="--model_dir=/media/koby_a/Data/train_log/test" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="train" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="FasterRCNN" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/train.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.freeze_graph" />
+      <item itemvalue="Python.freeze_graph_2" />
+      <item itemvalue="Python.freeze_graph_koby" />
+      <item itemvalue="Python.train" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.train" />
+        <item itemvalue="Python.freeze_graph_koby" />
+        <item itemvalue="Python.freeze_graph_2" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="58b87700-0e89-49e2-a449-5669383973cc" name="Default Changelist" comment="" />
+      <created>1534053473498</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1534053473498</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="64" y="-11" width="1857" height="1212" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14519651" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3431559" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.28992397" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3298479" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32889733" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.2756654" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" visible="true" weight="0.38878328" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14519651" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3431559" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.28992397" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3298479" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32889733" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.4230038" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.38878328" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../../../venv3/lib/python3.5/site-packages/tensorflow/python/framework/graph_util_impl.py</url>
+          <line>231</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../../../venv3/lib/python3.5/site-packages/tensorflow/python/framework/graph_util_impl.py</url>
+          <line>171</line>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../../../venv3/lib/python3.5/site-packages/tensorflow/python/framework/graph_util_impl.py</url>
+          <line>173</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../../../venv3/lib/python3.5/site-packages/tensorflow/python/framework/graph_util_impl.py</url>
+          <line>177</line>
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/display_image.py</url>
+          <line>50</line>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/utils/freeze_graph_koby.py" />
+    <entry file="file://$PROJECT_DIR$/freeze_graph_2.py" />
+    <entry file="file://$PROJECT_DIR$/tensorpack/callbacks/group.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="69" selection-start-line="69" selection-end-line="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tensorpack/tfutils/sessinit.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="253" selection-start-line="253" selection-end-line="253" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../venv3/lib/python3.5/site-packages/tensorflow/python/framework/meta_graph.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="630" column="6" selection-start-line="630" selection-start-column="6" selection-end-line="630" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../venv3/lib/python3.5/site-packages/google/protobuf/text_encoding.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="511">
+          <caret line="102" selection-start-line="102" selection-end-line="102" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../venv3/lib/python3.5/site-packages/tensorflow/python/framework/graph_util_impl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1000">
+          <caret line="190" column="53" selection-start-line="190" selection-start-column="43" selection-end-line="190" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tensorpack/predict/multigpu.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-76">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tensorpack/tfutils/varmanip.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2907">
+          <caret line="153" column="12" selection-start-line="153" selection-start-column="12" selection-end-line="153" selection-end-column="12" />
+          <folding>
+            <element signature="e#46#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tensorpack/callbacks/saver_for_koby.py" />
+    <entry file="file://$PROJECT_DIR$/tensorpack/tfutils/tower.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1470">
+          <caret line="294" column="8" selection-start-line="294" selection-start-column="8" selection-end-line="294" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tensorpack/callbacks/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../venv3/lib/python3.5/site-packages/tensorflow/python/util/deprecation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="431" selection-start-line="431" selection-end-line="431" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../venv3/lib/python3.5/site-packages/tensorflow/python/framework/importer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="441" selection-start-line="441" selection-end-line="441" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tensorpack/callbacks/trigger.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="149" column="8" selection-start-line="149" selection-start-column="8" selection-end-line="149" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tensorpack/train/tower.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="94" column="36" selection-start-line="94" selection-start-column="21" selection-end-line="94" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tensorpack/callbacks/prof.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="206" selection-start-line="206" selection-end-line="206" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../venv3/lib/python3.5/site-packages/tensorflow/contrib/memory_stats/ops/gen_memory_stats_ops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="148" selection-start-line="148" selection-end-line="148" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../venv3/lib/python3.5/site-packages/tensorflow/contrib/memory_stats/python/ops/memory_stats_ops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="654">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+          <folding>
+            <element signature="e#723#761#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../tensorflow_source_code/tensorflow/python/tools/freeze_graph.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="535">
+          <caret line="324" column="28" selection-start-line="324" selection-start-column="14" selection-end-line="324" selection-end-column="28" />
+          <folding>
+            <element signature="e#1586#1624#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tensorpack/callbacks/saver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1186">
+          <caret line="75" column="24" lean-forward="true" selection-start-line="75" selection-start-column="24" selection-end-line="75" selection-end-column="24" />
+          <folding>
+            <element signature="e#43#66#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../venv3/lib/python3.5/site-packages/tensorflow/python/framework/ops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4724">
+          <caret line="3016" column="10" lean-forward="true" selection-start-line="3016" selection-start-column="10" selection-end-line="3016" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../venv3/lib/python3.5/site-packages/tensorflow/python/training/saver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="1854" selection-start-line="1854" selection-end-line="1854" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../venv3/lib/python3.5/site-packages/tensorflow/python/platform/gfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../venv3/lib/python3.5/site-packages/tensorflow/python/util/compat.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../venv3/lib/python3.5/site-packages/tensorflow/python/framework/c_api_util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../venv3/lib/python3.5/site-packages/tensorflow/python/framework/errors_impl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="510" selection-start-line="510" selection-end-line="510" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../venv3/lib/python3.5/site-packages/tensorflow/python/pywrap_tensorflow_internal.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="1792" selection-start-line="1792" selection-end-line="1792" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../venv3/lib/python3.5/site-packages/tensorflow/python/lib/io/file_io.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="131" selection-start-line="131" selection-end-line="131" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../venv3/lib/python3.5/site-packages/google/protobuf/text_format.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="589" selection-start-line="589" selection-end-line="589" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../venv3/lib/python3.5/site-packages/tensorflow/python/tools/freeze_graph.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="173" selection-start-line="173" selection-end-line="173" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/KITTI_for_koby.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="946">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/freeze_graph_koby.py" />
+    <entry file="file://$PROJECT_DIR$/viz.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="64" column="4" selection-start-line="64" selection-start-column="4" selection-end-line="64" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../venv3/lib/python3.5/site-packages/tensorflow/python/ops/image_ops_impl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="79">
+          <caret line="1825" column="4" selection-start-line="1825" selection-start-column="4" selection-end-line="1825" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tensorpack/predict/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tensorpack/dataflow/common.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-35">
+          <caret line="279" column="6" selection-start-line="279" selection-start-column="6" selection-end-line="279" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tensorpack/dataflow/image.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="83" column="39" selection-start-line="83" selection-start-column="39" selection-end-line="83" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tensorpack/predict/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="140" column="8" selection-start-line="140" selection-start-column="8" selection-end-line="140" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/final_model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="36" column="29" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
+          <folding>
+            <marker date="1541599920000" expanded="true" signature="597:602" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5890">
+          <caret line="331" column="25" selection-start-line="331" selection-start-column="25" selection-end-line="331" selection-end-column="25" />
+          <folding>
+            <element signature="e#41#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eval.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2679">
+          <caret line="157" column="18" selection-start-line="157" selection-start-column="18" selection-end-line="157" selection-end-column="18" />
+          <folding>
+            <element signature="e#41#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="28" column="45" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
+          <folding>
+            <element signature="e#43#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tensorpack/dataflow/imgaug/transform.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1102">
+          <caret line="63" column="13" selection-start-line="63" selection-start-column="13" selection-end-line="63" selection-end-column="13" />
+          <folding>
+            <element signature="e#46#85#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tensorpack/dataflow/imgaug/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1919">
+          <caret line="109" column="6" selection-start-line="109" selection-start-column="6" selection-end-line="109" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model_frcnn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2850">
+          <caret line="160" column="24" selection-start-line="160" selection-start-column="4" selection-end-line="160" selection-end-column="24" />
+          <folding>
+            <element signature="e#42#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="69" column="66" selection-start-line="69" selection-start-column="61" selection-end-line="69" selection-end-column="66" />
+          <folding>
+            <element signature="e#43#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="553">
+          <caret line="474" column="46" selection-start-line="474" selection-start-column="46" selection-end-line="474" selection-end-column="46" />
+          <folding>
+            <element signature="e#64#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NumpyEncoder_json.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/display_image.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="931">
+          <caret line="49" column="23" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
+          <folding>
+            <element signature="e#50#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/open_images_for_koby.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="182" column="36" lean-forward="true" selection-start-line="182" selection-start-column="36" selection-end-line="182" selection-end-column="36" />
+          <folding>
+            <element signature="e#57#75#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
